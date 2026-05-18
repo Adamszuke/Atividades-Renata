@@ -4,79 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meus Filmes Favoritos</title>
-    <link rel="icon" href="./Icon.png" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/Icon.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
+  <header>
+    <h1>Meus Filmes Favoritos de Todos os Tempos</h1>
+    <!-- Adicionei o ID aqui para cumprir com a atividade mas sei que poderia apenas chamar o p filho de header -->
+    <p id="subtittle">Página dedicada a mostrar meus filmes favoritos</p>
+  </header>
+
   <body>
+    <section id="sobre">
+      <h2>Sobre Esta Lista</h2>
+      <p>
+        Essa lista é totalmente baseada nos meus gostos pessoais, então entendo
+        que discorde.
+      </p>
+    </section>
 
-    <header>
-      <h1>🎬 Meus Filmes Favoritos de Todos os Tempos</h1>
-      <p>Página dedicada a mostrar meus filmes favoritos</p>
-    </header>
-    
+    <section id="links">
+      <!-- Oportunidade que encontrei de utilizar uma classe no código utilizo para elemento reutilizaveis -->
+      <div class="link">
+        <h3>Meu Perfil no Letterboxd</h3>
+        <a href="https://letterboxd.com/Adamszuke/" target="_blank"
+          >Adamszuke</a
+        >
+      </div>
+      <div class="link">
+        <!-- Link interno que não havia na atividade anterior -->
+        <h3>Filmes que quero ver</h3>
+        <a href="./whatclist.html">Minha watchlist</a>
+      </div>
+    </section>
 
+    <section id="listas">
+      <h2>As Listas</h2>
 
-    <h2>Sobre Esta Lista</h2>
+      <h3>Top 5 — Os Meus Filmes Absolutos (em ordem)</h3>
 
-    <p>
-      Essa lista é totalmente baseada nos meus gostos pessoais, então entendo
-      que discorde.
-    </p>
+      <ol>
+        <li>
+          <article class="card">
+            <h2>Gênio Indomável - Gus Van Sant</h2>
+            <img src="./assets/Good_Will_Hunting.jpg" alt="Hot air balloons" />
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h2>Rocky IV - Sylvester Stallone</h2>
+            <img src="./assets/Rocky_IV.png" alt="Hot air balloons" />
+          </article>
+        </li>
 
-    <h3>Meu Perfil no Letterboxd</h3>
-    <a href="https://letterboxd.com/Adamszuke/" target="_blank">Adamszuke</a>
-    
-    <h3>Filmes que quero ver</h3>
-    <a href="https://letterboxd.com/Adamszuke/watchlist/">Minha watchlist</a>
+        <li>
+          <article class="card">
+            <h2>Hamnet - Chloé Zhao</h2>
+            <img src="./assets/hamnet.jpg" alt="Hot air balloons" />
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h2>O show de Truman - Peter Weir</h2>
+            <img src="./assets/TheTrumanShow.jpg" alt="Hot air balloons" />
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h2>Her - Spike Jonze</h2>
+            <img src="./assets/her.jpg" alt="Hot air balloons" />
+          </article>
+        </li>
+      </ol>
 
-    <hr />
+      <h3> Outros Filmes que Não Posso Deixar de Citar</h3>
 
-    <h2> As Listas</h2>
-
-    <h3> Top 5 — Os Meus Filmes Absolutos (em ordem)</h3>
-
-    <ol>
-      <li>
-        Gênio Indomável - Gus Van Sant
-      </li>
-      <li>
-        Rocky IV - Sylvester Stallone
-      </li>
-      <li>
-        Hamnet - Chloé Zhao
-      </li>
-      <li>
-        O show de Truman - Peter Weir
-      </li>
-      <li>
-        Her - Spike Jonze
-      </li>
-    </ol>
-
-    <hr />
-
-    <h3>🎭 Outros Filmes que Não Posso Deixar de Citar</h3>
-
-    <ul>
-      <li>
-        La La Land - Damien Chazelle
-      </li>
-      <li>
-        Brilho Eterno de uma Mente sem Lembranças - Michel Gondry
-      </li>
-      <li>
-        Better Man - Michael Gracey
-      </li>
-      <li>
-        Garra de Ferro - Sean Durkin
-      </li>
-      <li>
-        Piece by Piece - Morgan Neville
-      </li>
-    </ul>
-
-    <img src="./BetterMan.png" alt="Better-Man-Poster">
-    <hr />
+      <ul>
+        <li>
+          <article class="card">
+            <h2>La La Land - Damien Chazelle</h2>
+            <img src="./assets/la-la-land.jpg" alt="Hot air balloons" />
+          </article>
+          </li>
+        <li>
+          <article class="card">
+            <h2>Brilho Eterno de uma Mente sem Lembranças - Michel Gondry</h2>
+            <img src="./assets/brilho-eterno-de-uma-mente-sem-lembrancas.jpg" alt="Hot air balloons" />
+          </article>
+          </li>
+        <li>
+          <article class="card">
+            <h2>Better Man - Michael Gracey</h2>
+            <img src="./assets/BetterMan.png" alt="Hot air balloons" />
+          </article>
+          </li>
+        <li>
+          <article class="card">
+            <h2>Garra de Ferro - Sean Durkin</h2>
+            <img src="./assets/Iron_claw.jpg" alt="Hot air balloons" />
+          </article>
+          </li>
+        <li>
+          <article class="card">
+            <h2>Piece by Piece - Morgan Neville</h2>
+            <img src="./assets/Piece_by_Piece_final_poster.jpeg" alt="Hot air balloons" />
+          </article>
+          </li>
+      </ul>
+    </section>
   </body>
 </html>
