@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Nome</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Digite seu nome: "
+      />
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email: "
+      />
+      <label for="password">Senha</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Digite sua senha: "
+      />
+      <div id="born">
+        <label for="born-date">Data de nascimento:</label>
+        <input type="date" name="born-date" id="born-date" />
+      </div>
+      <input
+        type="text"
+        name="course"
+        id="course"
+        placeholder="Digite seu curso: "
+      />
+      <div id="gender">
+        <div class="gender-option">
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Masculino</label>
+        </div>
+
+        <div class="gender-option">
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Feminino</label>
+        </div>
+      </div>
+      <input
+        type="text"
+        name="interests"
+        id="interests"
+        placeholder="Digite seus interesses: "
+      />
+      <textarea
+        name="comentario"
+        id="comentario"
+        placeholder="Deixe seu comentário: "
+      ></textarea>
+      <div id="picture-container">
+        <label for="picture">Adicione uma imagem:</label>
+        <input type="file" name="picture" id="picture" />
+      </div>
+      <input type="submit" value="Enviar" id="submit" />
+    </form>
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    }
+
+    form {
+      width: 100%;
+      max-width: 600px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #2d5a27;
+    }
+
+    label {
+      font-weight: 500;
+      color: #333;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #4caf50;
+      box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    }
+
+    #born,
+    #picture-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    #gender {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .gender-option {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .gender-option input {
+      width: auto;
+      margin: 0;
+    }
+
+    #submit {
+      margin-top: 10px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      height: 50px;
+      transition: 0.3s;
+    }
+
+    #submit:hover {
+      background: #388e3c;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+      }
+
+      #gender {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</html>
